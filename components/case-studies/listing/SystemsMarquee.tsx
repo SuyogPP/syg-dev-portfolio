@@ -1,0 +1,41 @@
+"use client";
+
+import { motion } from "motion/react";
+
+export default function SystemsMarquee() {
+  const items = [
+    "Enterprise Systems",
+    "Workforce Operations",
+    "Visitor Operations",
+    "Multi-Tenant Architecture",
+    "Real-Time Workflows",
+    "Dashboard Engineering",
+    "Operational Visibility",
+    "Production Systems"
+  ];
+
+  return (
+    <div className="py-12 relative overflow-hidden border-y border-white/5 bg-black/20">
+      <div className="absolute inset-0 bg-gradient-to-r from-background via-transparent to-background z-10 pointer-events-none" />
+      
+      <motion.div
+        animate={{ x: [0, -1000] }}
+        transition={{ 
+          duration: 30, 
+          repeat: Infinity, 
+          ease: "linear" 
+        }}
+        className="flex whitespace-nowrap gap-12 items-center"
+      >
+        {[...items, ...items, ...items].map((item, i) => (
+          <div key={i} className="flex items-center gap-12">
+            <span className="text-xl md:text-2xl font-bold text-white/20 uppercase tracking-[0.2em] hover:text-indigo-500/50 transition-colors duration-500 cursor-default">
+              {item}
+            </span>
+            <div className="w-2 h-2 rounded-full bg-indigo-500/20" />
+          </div>
+        ))}
+      </motion.div>
+    </div>
+  );
+}
