@@ -69,7 +69,7 @@ export default function ProjectsHero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-lg md:text-2xl text-white/50 max-w-3xl mx-auto leading-relaxed font-medium"
         >
-          Independent builds, frontend explorations, realtime systems, product experiments, and engineering concepts.
+          Independent engineering explorations focused on immersive experiences, realtime systems, emotional UX, and modern frontend architecture.
         </motion.p>
       </div>
 

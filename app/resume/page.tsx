@@ -1,90 +1,93 @@
 "use client";
 
 import PageWrapper from "@/components/layout/PageWrapper";
-import Section from "@/components/layout/Section";
-import Container from "@/components/layout/Container";
-import SectionHeading from "@/components/case-studies/SectionHeading";
-import AnimatedGrid from "@/components/case-studies/AnimatedGrid";
 import { motion } from "motion/react";
-import { Download, ChevronRight } from "lucide-react";
 import Link from "next/link";
+import { Mail, Download, ArrowRight } from "lucide-react";
+import { RESUME_DATA } from "@/data/resume";
+
+// Resume Components
+import ResumeHero from "@/components/resume/ResumeHero";
+import ResumeActionPanel from "@/components/resume/ResumeActionPanel";
+import ProfessionalSummary from "@/components/resume/ProfessionalSummary";
+import ExperienceTimeline from "@/components/resume/ExperienceTimeline";
+import SkillsEcosystem from "@/components/resume/SkillsEcosystem";
+import ArchitectureExpertise from "@/components/resume/ArchitectureExpertise";
+import LearningJourney from "@/components/resume/LearningJourney";
+import ResumePreview from "@/components/resume/ResumePreview";
 
 export default function ResumePage() {
   return (
     <PageWrapper>
-      {/* Hero Section */}
-      <Section padding="xl" className="overflow-hidden">
-        <AnimatedGrid />
-        <Container size="lg" className="relative z-10 text-center">
-          <SectionHeading 
-            title="Professional Experience"
-            subtitle="An overview of my career, technical expertise, and leadership roles in the engineering industry."
-            label="Resume & Background"
-            align="center"
-          />
-          
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-12"
-          >
-            <a
-              href="/resume.pdf"
-              download
-              className="group relative px-10 py-5 bg-white text-black rounded-full font-bold flex items-center gap-3 hover:scale-105 transition-transform"
-            >
-              <Download size={20} />
-              Download Resume
-            </a>
-            
-            <Link
-              href="/case-studies"
-              className="group flex items-center gap-2 text-white font-semibold hover:text-indigo-400 transition-colors"
-            >
-              View Case Studies
-              <ChevronRight size={20} className="group-hover:translate-x-1 transition-transform" />
-            </Link>
-          </motion.div>
-        </Container>
-      </Section>
+      <div className="bg-background selection:bg-indigo-500/30">
+        {/* 1. Cinematic Hero Section */}
+        <ResumeHero />
 
-      {/* Experience Preview / Snapshot */}
-      <Section padding="lg">
-        <Container size="md">
-          <div className="space-y-12">
-            {[
-              {
-                role: "Senior Fullstack Engineer",
-                company: "Enterprise Workforce Solutions",
-                period: "2021 — Present",
-                desc: "Leading architecture for a multi-tenant workforce management platform serving 2,000+ daily active users."
-              },
-              {
-                role: "Lead Frontend Developer",
-                company: "Digital Systems Inc.",
-                period: "2018 — 2021",
-                desc: "Architected high-performance dashboard systems and design systems for enterprise scale applications."
-              }
-            ].map((exp, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: i * 0.1 }}
-                className="relative pl-8 border-l border-white/10 group"
-              >
-                <div className="absolute -left-[5px] top-2 w-[9px] h-[9px] rounded-full bg-white/20 group-hover:bg-indigo-500 transition-colors" />
-                <div className="text-xs uppercase tracking-widest text-indigo-400 font-bold mb-2">{exp.period}</div>
-                <h3 className="text-2xl font-bold text-white mb-1">{exp.role}</h3>
-                <div className="text-lg text-white/40 mb-4">{exp.company}</div>
-                <p className="text-white/60 leading-relaxed max-w-2xl">{exp.desc}</p>
-              </motion.div>
-            ))}
+        {/* 2. Resume Action Panel */}
+        <ResumeActionPanel />
+
+        {/* 3. Professional Summary */}
+        <ProfessionalSummary />
+
+        {/* 4. Experience Timeline */}
+        <ExperienceTimeline />
+
+        {/* 5. Technical Skills Ecosystem */}
+        <SkillsEcosystem />
+
+        {/* 6. Systems & Architecture Expertise */}
+        <ArchitectureExpertise />
+
+        {/* 7. Certifications & Learning */}
+        <LearningJourney />
+
+        {/* 8. Resume Preview Section */}
+        <ResumePreview />
+
+        {/* 9. Recruiter CTA Section */}
+        <section className="py-24 md:py-48 px-4 relative overflow-hidden bg-white/[0.02]">
+          <div className="container max-w-4xl mx-auto text-center relative z-10">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="space-y-12"
+            >
+              <h2 className="text-4xl md:text-6xl font-bold text-white tracking-tighter">
+                Interested in building <span className="text-gradient">scalable systems</span> together?
+              </h2>
+              
+              <div className="flex flex-wrap justify-center gap-8">
+                <Link
+                  href={`mailto:${RESUME_DATA.contact.email}`}
+                  className="group flex items-center gap-4 px-10 py-5 bg-white text-black rounded-full font-bold hover:scale-105 transition-all duration-500 shadow-[0_0_50px_rgba(255,255,255,0.1)]"
+                >
+                  <Mail size={20} />
+                  Contact Me
+                </Link>
+                <Link
+                  href={RESUME_DATA.contact.resumePdf}
+                  download="Suyog_P_Resume.pdf"
+                  className="group flex items-center gap-4 px-10 py-5 glass-panel border border-white/10 text-white rounded-full font-bold hover:bg-white/5 transition-all duration-500"
+                >
+                  <Download size={20} />
+                  Download Resume
+                </Link>
+                <Link
+                  href="/case-studies"
+                  className="group flex items-center gap-4 px-10 py-5 glass-panel border border-white/5 text-white/50 rounded-full font-bold hover:text-white transition-all duration-500"
+                >
+                  View Case Studies
+                  <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </div>
+            </motion.div>
           </div>
-        </Container>
-      </Section>
+          
+          {/* Background Ambience */}
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-indigo-500/10 blur-[150px] rounded-full pointer-events-none" />
+        </section>
+      </div>
     </PageWrapper>
   );
 }

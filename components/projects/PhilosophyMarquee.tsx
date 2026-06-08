@@ -4,15 +4,14 @@ import { motion } from "motion/react";
 
 export default function PhilosophyMarquee() {
   const items = [
-    "Frontend Architecture",
+    "Emotional UX",
+    "Realtime Experiences",
+    "Frontend Craftsmanship",
     "Product Thinking",
-    "Realtime Systems",
-    "UX Engineering",
-    "Design Systems",
-    "Interactive Experiences",
-    "Performance Engineering",
     "Motion Systems",
-    "AI-Powered Workflows"
+    "Storytelling Interfaces",
+    "Immersive UI",
+    "Interactive Systems"
   ];
 
   return (

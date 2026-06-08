@@ -7,9 +7,7 @@ import CTASection from "@/components/case-studies/CTASection";
 import ProjectsHero from "@/components/projects/ProjectsHero";
 import PhilosophyMarquee from "@/components/projects/PhilosophyMarquee";
 import FeaturedProjects from "@/components/projects/FeaturedProjects";
-import ExperimentalBuilds from "@/components/projects/ExperimentalBuilds";
-import FrontendCraftsmanship from "@/components/projects/FrontendCraftsmanship";
-import LabsExplorations from "@/components/projects/LabsExplorations";
+import ProductThinking from "@/components/projects/ProductThinking";
 
 export default function ProjectsPage() {
   return (
@@ -21,22 +19,16 @@ export default function ProjectsPage() {
         {/* 2. Engineering Philosophy Strip */}
         <PhilosophyMarquee />
 
-        {/* 3. Featured Personal Projects */}
+        {/* 3. Featured Project Showcase (CoupleOS) */}
         <FeaturedProjects />
 
-        {/* 4. Experimental Builds Section */}
-        <ExperimentalBuilds />
+        {/* 4. Personal Product Thinking Section */}
+        <ProductThinking />
 
-        {/* 5. Frontend Craftsmanship Section */}
-        <FrontendCraftsmanship />
-
-        {/* 6. Labs / Explorations Section */}
-        <LabsExplorations />
-
-        {/* 7. Final CTA Section */}
+        {/* 5. Final CTA Section */}
         <CTASection 
-          title="Interested in scalable engineering systems?"
-          subtitle="I'm always open to discussing architectural paradigms, product experiments, and production-grade engineering opportunities."
+          title="Building experiences people emotionally connect with."
+          subtitle="I enjoy creating immersive digital experiences that combine storytelling, realtime systems, and thoughtful frontend engineering."
         />
       </div>
     </PageWrapper>
