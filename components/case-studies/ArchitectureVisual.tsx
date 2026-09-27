@@ -19,7 +19,7 @@ interface ArchitectureVisualProps {
 export default function ArchitectureVisual({ nodes }: ArchitectureVisualProps) {
   return (
     <div className="relative h-[600px] w-full rounded-[3rem] glass-panel border border-white/5 overflow-hidden p-8">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(79,70,229,0.05),transparent_70%)]" />
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(244,63,94,0.05),transparent_70%)]" />
       
       {/* Dynamic Connection Lines */}
       <svg className="absolute inset-0 w-full h-full pointer-events-none opacity-20">
@@ -57,8 +57,8 @@ export default function ArchitectureVisual({ nodes }: ArchitectureVisualProps) {
             transform: 'translate(-50%, -50%)' 
           }}
         >
-          <div className={`p-4 rounded-2xl glass-panel border border-white/10 group-hover:border-indigo-500/50 group-hover:bg-indigo-500/5 transition-all duration-500 ${node.type === 'core' ? 'scale-125' : ''}`}>
-            <node.icon className={`w-6 h-6 ${node.type === 'core' ? 'text-indigo-400' : 'text-white/40'}`} />
+          <div className={`p-4 rounded-2xl glass-panel border border-white/10 group-hover:border-rose-500/50 group-hover:bg-rose-500/5 transition-all duration-500 ${node.type === 'core' ? 'scale-125' : ''}`}>
+            <node.icon className={`w-6 h-6 ${node.type === 'core' ? 'text-rose-400' : 'text-white/40'}`} />
           </div>
           <span className="text-[10px] md:text-xs font-bold text-white/40 uppercase tracking-[0.2em] whitespace-nowrap group-hover:text-white/60 transition-colors">
             {node.label}
@@ -83,7 +83,7 @@ export default function ArchitectureVisual({ nodes }: ArchitectureVisualProps) {
               repeat: Infinity,
               delay: i * 2
             }}
-            className="w-1 h-1 bg-indigo-500/40 rounded-full blur-[2px]"
+            className="w-1 h-1 bg-rose-500/40 rounded-full blur-[2px]"
           />
         ))}
       </div>

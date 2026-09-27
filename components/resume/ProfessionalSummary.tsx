@@ -23,7 +23,7 @@ export default function ProfessionalSummary() {
               transition={{ duration: 0.8 }}
               className="p-10 rounded-[3rem] glass-panel border border-white/5 bg-black/40 relative"
             >
-              <div className="absolute top-8 left-8 w-12 h-1 bg-indigo-500 rounded-full" />
+              <div className="absolute top-8 left-8 w-12 h-1 bg-rose-500 rounded-full" />
               <p className="text-xl md:text-2xl text-white/70 leading-relaxed font-medium italic">
                 &quot;{RESUME_DATA.summary}&quot;
               </p>
@@ -38,7 +38,7 @@ export default function ProfessionalSummary() {
                   "Product Thinking"
                 ].map((tag, i) => (
                   <div key={i} className="flex items-center gap-2">
-                    <div className="w-1.5 h-1.5 rounded-full bg-indigo-500/50" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-rose-500/50" />
                     <span className="text-[10px] font-bold text-white/30 uppercase tracking-widest">{tag}</span>
                   </div>
                 ))}

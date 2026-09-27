@@ -12,7 +12,7 @@ import ProductThinking from "@/components/projects/ProductThinking";
 export default function ProjectsPage() {
   return (
     <PageWrapper>
-      <div className="bg-background selection:bg-indigo-500/30">
+      <div className="bg-background selection:bg-red-500/30">
         {/* 1. Cinematic Hero Section */}
         <ProjectsHero />
 

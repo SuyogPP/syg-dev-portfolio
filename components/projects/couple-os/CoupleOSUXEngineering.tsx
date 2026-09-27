@@ -33,8 +33,8 @@ export default function CoupleOSUXEngineering() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {pillars.map((pillar, i) => (
                 <div key={i} className="space-y-4 group">
-                  <div className="w-12 h-12 rounded-2xl bg-indigo-500/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
-                    <pillar.icon size={20} className="text-indigo-400" />
+                  <div className="w-12 h-12 rounded-2xl bg-rose-500/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-500">
+                    <pillar.icon size={20} className="text-rose-400" />
                   </div>
                   <h5 className="text-sm font-bold text-white uppercase tracking-wider">{pillar.title}</h5>
                   <p className="text-xs text-white/40 leading-relaxed">{pillar.desc}</p>
@@ -45,7 +45,7 @@ export default function CoupleOSUXEngineering() {
 
           <div className="relative">
             <div className="aspect-square rounded-[3.5rem] glass-panel border border-white/10 p-1 bg-white/[0.01] overflow-hidden group">
-              <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/20 via-transparent to-pink-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+              <div className="absolute inset-0 bg-gradient-to-br from-rose-500/20 via-transparent to-pink-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
               <div className="w-full h-full bg-black/60 rounded-[3.4rem] flex items-center justify-center p-12">
                 <div className="relative w-full h-full border border-white/5 rounded-3xl overflow-hidden flex flex-col items-center justify-center gap-12">
                    <div className="flex gap-4">
@@ -54,15 +54,15 @@ export default function CoupleOSUXEngineering() {
                          key={i}
                          animate={{ scale: [1, 1.1, 1] }}
                          transition={{ duration: 3, repeat: Infinity, delay: i * 0.5 }}
-                         className="w-16 h-16 rounded-2xl glass-panel border border-white/10 bg-indigo-500/10"
+                         className="w-16 h-16 rounded-2xl glass-panel border border-white/10 bg-rose-500/10"
                        />
                      ))}
                    </div>
-                   <div className="w-3/4 h-2 bg-indigo-500/20 rounded-full relative overflow-hidden">
+                   <div className="w-3/4 h-2 bg-rose-500/20 rounded-full relative overflow-hidden">
                      <motion.div
                        animate={{ x: ["-100%", "100%"] }}
                        transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                       className="absolute inset-0 bg-indigo-500"
+                       className="absolute inset-0 bg-rose-500"
                      />
                    </div>
                 </div>

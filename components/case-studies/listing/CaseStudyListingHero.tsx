@@ -33,8 +33,8 @@ export default function CaseStudyListingHero() {
             className="absolute hidden lg:block"
             style={{ left: item.x, top: item.y }}
           >
-            <div className="p-4 rounded-2xl glass-panel border border-white/10 bg-indigo-500/5">
-              <item.Icon className="w-8 h-8 text-indigo-400" />
+            <div className="p-4 rounded-2xl glass-panel border border-white/10 bg-rose-500/5">
+              <item.Icon className="w-8 h-8 text-rose-400" />
             </div>
           </motion.div>
         ))}
@@ -47,7 +47,7 @@ export default function CaseStudyListingHero() {
           transition={{ duration: 0.8 }}
           className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-md mb-8"
         >
-          <div className="w-1.5 h-1.5 rounded-full bg-indigo-500" />
+          <div className="w-1.5 h-1.5 rounded-full bg-rose-500" />
           <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-white/40">
             Showcase Index
           </span>

@@ -19,7 +19,7 @@ export default function SectionHeading({ title, subtitle, label, align = "left" 
       className={`max-w-3xl mb-12 md:mb-20 ${align === "center" ? "mx-auto text-center" : ""}`}
     >
       {label && (
-        <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-indigo-400 mb-4 block">
+        <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-rose-400 mb-4 block">
           {label}
         </span>
       )}

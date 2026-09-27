@@ -45,7 +45,7 @@ export default function NavLinks({
             {!mobile && isActive && (
               <motion.span
                 layoutId="activeNav"
-                className="absolute -bottom-1 left-0 right-0 h-[2px] bg-indigo-500 shadow-[0_0_8px_rgba(79,70,229,0.5)]"
+                className="absolute -bottom-1 left-0 right-0 h-[2px] bg-red-500 shadow-[0_0_8px_rgba(239,68,68,0.5)]"
                 transition={{ type: "spring", stiffness: 380, damping: 30 }}
               />
             )}

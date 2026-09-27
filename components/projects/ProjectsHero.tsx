@@ -34,8 +34,8 @@ export default function ProjectsHero() {
             className="absolute hidden lg:block"
             style={{ left: item.x, top: item.y }}
           >
-            <div className="p-5 rounded-3xl glass-panel border border-white/10 bg-indigo-500/5 shadow-2xl">
-              <item.Icon className="w-10 h-10 text-indigo-400" />
+            <div className="p-5 rounded-3xl glass-panel border border-white/10 bg-rose-500/5 shadow-2xl">
+              <item.Icon className="w-10 h-10 text-rose-400" />
             </div>
           </motion.div>
         ))}
@@ -48,7 +48,7 @@ export default function ProjectsHero() {
           transition={{ duration: 0.8 }}
           className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-md mb-8"
         >
-          <div className="w-1.5 h-1.5 rounded-full bg-indigo-500 animate-pulse" />
+          <div className="w-1.5 h-1.5 rounded-full bg-rose-500 animate-pulse" />
           <span className="text-[10px] uppercase tracking-[0.3em] font-bold text-white/40">
             Independent Engineering
           </span>
@@ -74,7 +74,7 @@ export default function ProjectsHero() {
       </div>
 
       {/* Decorative Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-indigo-500/10 blur-[150px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-rose-500/10 blur-[150px] rounded-full pointer-events-none" />
     </section>
   );
 }

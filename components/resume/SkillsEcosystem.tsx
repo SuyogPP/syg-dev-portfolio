@@ -31,7 +31,7 @@ export default function SkillsEcosystem() {
               className="p-10 rounded-[3rem] glass-panel border border-white/5 bg-white/[0.01] hover:bg-white/[0.03] transition-all duration-500 group"
             >
               <div className="mb-8">
-                <div className="text-[10px] font-bold text-indigo-400 uppercase tracking-[0.3em] mb-2">Category</div>
+                <div className="text-[10px] font-bold text-rose-400 uppercase tracking-[0.3em] mb-2">Category</div>
                 <h4 className="text-xl font-bold text-white tracking-tight">{category.category}</h4>
               </div>
 

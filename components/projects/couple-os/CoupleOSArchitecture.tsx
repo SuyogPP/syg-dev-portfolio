@@ -43,7 +43,7 @@ export default function CoupleOSArchitecture() {
           {/* Architecture Visualization */}
           <div className="lg:col-span-8">
             <div className="h-full rounded-[3rem] glass-panel border border-white/5 bg-black/60 p-12 relative overflow-hidden flex items-center justify-center">
-               <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/5 to-transparent" />
+               <div className="absolute inset-0 bg-gradient-to-br from-rose-500/5 to-transparent" />
                
                <div className="grid grid-cols-2 md:grid-cols-4 gap-8 relative z-10 w-full text-center">
                   {[
@@ -53,7 +53,7 @@ export default function CoupleOSArchitecture() {
                     { icon: Cpu, label: "LLM Orchestrator" }
                   ].map((Node, i) => (
                     <div key={i} className="space-y-4">
-                       <div className="w-16 h-16 rounded-3xl glass-panel border border-white/10 bg-indigo-500/5 flex items-center justify-center mx-auto text-indigo-400 group hover:scale-110 transition-transform duration-500">
+                       <div className="w-16 h-16 rounded-3xl glass-panel border border-white/10 bg-rose-500/5 flex items-center justify-center mx-auto text-rose-400 group hover:scale-110 transition-transform duration-500">
                           <Node.icon size={24} />
                        </div>
                        <div className="text-[10px] font-bold text-white/40 uppercase tracking-widest">{Node.label}</div>

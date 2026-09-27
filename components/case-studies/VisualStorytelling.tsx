@@ -59,14 +59,14 @@ export default function VisualStorytelling() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="group p-10 rounded-[3rem] glass-panel border border-white/5 bg-white/[0.01] hover:border-indigo-500/30 transition-all duration-500 flex flex-col"
+              className="group p-10 rounded-[3rem] glass-panel border border-white/5 bg-white/[0.01] hover:border-rose-500/30 transition-all duration-500 flex flex-col"
             >
-              <div className="w-16 h-16 rounded-[1.5rem] bg-indigo-500/10 flex items-center justify-center mb-10 group-hover:scale-110 transition-transform">
-                <card.icon className="w-8 h-8 text-indigo-400" />
+              <div className="w-16 h-16 rounded-[1.5rem] bg-rose-500/10 flex items-center justify-center mb-10 group-hover:scale-110 transition-transform">
+                <card.icon className="w-8 h-8 text-rose-400" />
               </div>
 
               <div className="mb-8">
-                <div className="text-[10px] text-indigo-400 font-bold uppercase tracking-[0.2em] mb-2">{card.subtitle}</div>
+                <div className="text-[10px] text-rose-400 font-bold uppercase tracking-[0.2em] mb-2">{card.subtitle}</div>
                 <h3 className="text-2xl font-bold text-white mb-4 tracking-tight">{card.title}</h3>
                 <p className="text-sm text-white/50 leading-relaxed font-medium">
                   {card.desc}
@@ -90,11 +90,11 @@ export default function VisualStorytelling() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mt-16 p-8 rounded-[2rem] glass-panel border border-white/5 bg-indigo-500/[0.02] flex flex-col md:flex-row items-center justify-between gap-8"
+          className="mt-16 p-8 rounded-[2rem] glass-panel border border-white/5 bg-rose-500/[0.02] flex flex-col md:flex-row items-center justify-between gap-8"
         >
           <div className="flex items-center gap-6">
-            <div className="p-4 rounded-2xl bg-indigo-500/10">
-              <Cpu className="w-6 h-6 text-indigo-400" />
+            <div className="p-4 rounded-2xl bg-rose-500/10">
+              <Cpu className="w-6 h-6 text-rose-400" />
             </div>
             <div>
               <div className="text-sm font-bold text-white mb-1">Production-Grade Lifecycle Management</div>

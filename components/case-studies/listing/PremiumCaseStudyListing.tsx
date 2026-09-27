@@ -28,7 +28,7 @@ export default function PremiumCaseStudyListing() {
                   <motion.div
                     animate={{ rotate: 360 }}
                     transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
-                    className="absolute inset-0 rounded-full border border-indigo-500/10"
+                    className="absolute inset-0 rounded-full border border-rose-500/10"
                   />
                   
                   <div className="grid grid-cols-2 gap-8 relative z-10">
@@ -40,10 +40,10 @@ export default function PremiumCaseStudyListing() {
                     ].map((item, i) => (
                       <motion.div
                         key={i}
-                        whileHover={{ scale: 1.1, border: 'rgba(99,102,241,0.5)' }}
+                        whileHover={{ scale: 1.1, border: 'rgba(244,63,94,0.5)' }}
                         className="p-6 rounded-[2rem] glass-panel border border-white/5 bg-black/40 flex flex-col items-center gap-3 transition-all duration-500"
                       >
-                        <item.icon className="w-8 h-8 text-indigo-400" />
+                        <item.icon className="w-8 h-8 text-rose-400" />
                         <span className="text-[8px] font-bold text-white/40 uppercase tracking-widest">{item.label}</span>
                       </motion.div>
                     ))}
@@ -79,15 +79,15 @@ export default function PremiumCaseStudyListing() {
                       initial={{ x: 20, opacity: 0 }}
                       whileInView={{ x: 0, opacity: 1 }}
                       transition={{ delay: 0.2 + i * 0.1 }}
-                      className="p-6 rounded-2xl glass-panel border border-white/5 bg-black/40 flex items-center justify-between group hover:border-indigo-500/30 transition-all duration-500"
+                      className="p-6 rounded-2xl glass-panel border border-white/5 bg-black/40 flex items-center justify-between group hover:border-rose-500/30 transition-all duration-500"
                     >
                       <div className="flex items-center gap-4">
-                        <div className="p-3 rounded-xl bg-indigo-500/10 text-indigo-400 group-hover:scale-110 transition-transform">
+                        <div className="p-3 rounded-xl bg-rose-500/10 text-rose-400 group-hover:scale-110 transition-transform">
                           <item.icon size={20} />
                         </div>
                         <div>
                           <div className="text-sm font-bold text-white">{item.label}</div>
-                          <div className="text-[10px] text-indigo-400 font-mono tracking-tighter uppercase">{item.status}</div>
+                          <div className="text-[10px] text-rose-400 font-mono tracking-tighter uppercase">{item.status}</div>
                         </div>
                       </div>
                       <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />

@@ -33,7 +33,7 @@ export default function CoupleOSVision() {
 
           <div className="relative">
             <div className="aspect-square rounded-[3rem] glass-panel border border-white/10 p-12 bg-white/[0.01] relative overflow-hidden flex items-center justify-center">
-              <div className="absolute inset-0 bg-gradient-to-br from-pink-500/10 via-transparent to-indigo-500/10" />
+              <div className="absolute inset-0 bg-gradient-to-br from-pink-500/10 via-transparent to-rose-500/10" />
               
               <div className="relative z-10 text-center">
                 <motion.div
@@ -50,7 +50,7 @@ export default function CoupleOSVision() {
                     opacity: [0.2, 0.4, 0.2]
                   }}
                   transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-                  className="w-64 h-64 rounded-full bg-indigo-500/10 border border-indigo-500/20 blur-2xl absolute -bottom-24 -right-24"
+                  className="w-64 h-64 rounded-full bg-rose-500/10 border border-rose-500/20 blur-2xl absolute -bottom-24 -right-24"
                 />
                 
                 <div className="text-sm font-bold text-white/40 uppercase tracking-[0.3em] mb-4">Vision Statement</div>

@@ -54,15 +54,14 @@ export default function ResumeActionPanel() {
                 href={action.href}
                 target={action.target}
                 download={action.download}
-                className={`
-                  flex items-center gap-3 px-6 py-3 rounded-full font-bold transition-all duration-300
-                  ${action.primary 
-                    ? "bg-white text-black hover:scale-105 shadow-[0_0_30px_rgba(255,255,255,0.1)]" 
-                    : "glass-panel border border-white/10 text-white hover:bg-white/5"}
-                `}
+                className={
+                  action.primary 
+                    ? "btn-primary !px-6 !py-3 text-sm" 
+                    : "btn-secondary !px-6 !py-3 text-sm"
+                }
               >
-                <action.icon size={18} />
-                <span className="text-sm tracking-tight">{action.label}</span>
+                <action.icon size={16} />
+                <span className="tracking-tight">{action.label}</span>
               </Link>
             </motion.div>
           ))}

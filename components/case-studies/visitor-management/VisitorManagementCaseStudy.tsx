@@ -19,7 +19,7 @@ export default function VisitorManagementCaseStudy() {
 
   return (
     <PageWrapper>
-      <div className="bg-background text-foreground selection:bg-indigo-500/30">
+      <div className="bg-background text-foreground selection:bg-red-500/30">
         
         {/* Cinematic Hero */}
         <section className="relative min-h-[90vh] flex flex-col items-center justify-center pt-32 pb-20 px-4 overflow-hidden">
@@ -31,7 +31,7 @@ export default function VisitorManagementCaseStudy() {
               transition={{ duration: 0.8 }}
               className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 backdrop-blur-md mb-8"
             >
-              <div className="w-2 h-2 rounded-full bg-indigo-500 animate-pulse" />
+              <div className="w-2 h-2 rounded-full bg-rose-500 animate-pulse" />
               <span className="text-[10px] uppercase tracking-[0.2em] font-semibold text-white/60">
                 Enterprise Operations Platform
               </span>
@@ -59,7 +59,7 @@ export default function VisitorManagementCaseStudy() {
           </div>
 
           {/* Background Decorative Visuals */}
-          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-5xl h-64 bg-[radial-gradient(ellipse_at_center,rgba(79,70,229,0.1),transparent_70%)] pointer-events-none" />
+          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full max-w-5xl h-64 bg-[radial-gradient(ellipse_at_center,rgba(244,63,94,0.1),transparent_70%)] pointer-events-none" />
         </section>
 
         {/* Overview Section */}
@@ -74,7 +74,7 @@ export default function VisitorManagementCaseStudy() {
               </div>
               <div className="lg:col-span-7">
                 <div className="relative">
-                  <div className="absolute -left-12 top-0 bottom-0 w-[1px] bg-gradient-to-b from-indigo-500/50 to-transparent hidden lg:block" />
+                  <div className="absolute -left-12 top-0 bottom-0 w-[1px] bg-gradient-to-b from-rose-500/50 to-transparent hidden lg:block" />
                   <p className="fluid-p text-white/80 mb-12">
                     Modern enterprise facilities face significant operational friction in managing visitor throughput. Manual registration, approval bottlenecks, and lack of real-time visibility create security vulnerabilities and inefficient lobby operations. 
                   </p>
@@ -84,8 +84,8 @@ export default function VisitorManagementCaseStudy() {
                       { icon: Zap, title: "Operational Velocity", desc: "Reducing lobby wait times through digital pre-registration." }
                     ].map((item, i) => (
                       <div key={i} className="flex flex-col gap-4">
-                        <div className="w-10 h-10 rounded-xl bg-indigo-500/10 flex items-center justify-center">
-                          <item.icon className="w-5 h-5 text-indigo-400" />
+                        <div className="w-10 h-10 rounded-xl bg-rose-500/10 flex items-center justify-center">
+                          <item.icon className="w-5 h-5 text-rose-400" />
                         </div>
                         <h4 className="text-sm font-bold text-white uppercase tracking-wider">{item.title}</h4>
                         <p className="text-xs text-white/50 leading-relaxed">{item.desc}</p>
@@ -121,9 +121,9 @@ export default function VisitorManagementCaseStudy() {
                 />
                 <defs>
                   <linearGradient id="flow-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                    <stop offset="0%" stopColor="#4f46e5" stopOpacity="0" />
-                    <stop offset="50%" stopColor="#818cf8" stopOpacity="1" />
-                    <stop offset="100%" stopColor="#4f46e5" stopOpacity="0" />
+                    <stop offset="0%" stopColor="#e11d48" stopOpacity="0" />
+                    <stop offset="50%" stopColor="#fb7185" stopOpacity="1" />
+                    <stop offset="100%" stopColor="#e11d48" stopOpacity="0" />
                   </linearGradient>
                 </defs>
               </svg>
@@ -145,9 +145,9 @@ export default function VisitorManagementCaseStudy() {
                     transition={{ delay: i * 0.1 }}
                     className="flex flex-col items-center gap-6"
                   >
-                    <div className="w-16 h-16 rounded-2xl glass-panel border border-white/10 flex items-center justify-center relative z-10 group hover:border-indigo-500/50 transition-all duration-500">
-                      <div className="absolute inset-0 bg-indigo-500/5 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity" />
-                      <step.icon className="w-7 h-7 text-indigo-400" />
+                    <div className="w-16 h-16 rounded-2xl glass-panel border border-white/10 flex items-center justify-center relative z-10 group hover:border-rose-500/50 transition-all duration-500">
+                      <div className="absolute inset-0 bg-rose-500/5 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity" />
+                      <step.icon className="w-7 h-7 text-rose-400" />
                     </div>
                     <div className="text-center">
                       <div className="text-sm font-bold text-white mb-1 uppercase tracking-tight">{step.label}</div>
@@ -170,7 +170,7 @@ export default function VisitorManagementCaseStudy() {
                 viewport={{ once: true }}
               >
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 backdrop-blur-md mb-6">
-                  <Workflow className="w-3 h-3 text-indigo-400" />
+                  <Workflow className="w-3 h-3 text-rose-400" />
                   <span className="text-[10px] uppercase tracking-widest font-semibold text-white/70">Workflow Engine</span>
                 </div>
                 <h3 className="text-3xl md:text-5xl font-bold text-white mb-8 leading-tight">
@@ -187,7 +187,7 @@ export default function VisitorManagementCaseStudy() {
                     "Hierarchical approval chains for sensitive facilities"
                   ].map((text, i) => (
                     <li key={i} className="flex items-center gap-4 text-sm text-white/70">
-                      <div className="w-1.5 h-1.5 rounded-full bg-indigo-500 shrink-0" />
+                      <div className="w-1.5 h-1.5 rounded-full bg-rose-500 shrink-0" />
                       {text}
                     </li>
                   ))}
@@ -201,7 +201,7 @@ export default function VisitorManagementCaseStudy() {
                 className="relative"
               >
                 <div className="aspect-square rounded-[3rem] glass-panel border border-white/10 overflow-hidden p-8 flex items-center justify-center relative">
-                  <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-rose-500/10 to-transparent" />
                   {/* Approval UI Mockup Concept */}
                   <div className="w-full max-w-xs space-y-4">
                     {[
@@ -217,7 +217,7 @@ export default function VisitorManagementCaseStudy() {
                         className="p-4 rounded-2xl glass-panel border border-white/5 bg-black/40 flex items-center justify-between"
                       >
                         <div className="flex items-center gap-3">
-                          <div className="w-8 h-8 rounded-full bg-indigo-500/20 flex items-center justify-center text-[10px] font-bold text-indigo-400">
+                          <div className="w-8 h-8 rounded-full bg-rose-500/20 flex items-center justify-center text-[10px] font-bold text-rose-400">
                             {item.name[0]}
                           </div>
                           <div>
@@ -271,10 +271,10 @@ export default function VisitorManagementCaseStudy() {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.1 }}
-                  className="p-8 rounded-[2rem] glass-panel border border-white/5 bg-black/40 hover:border-indigo-500/30 transition-all duration-500 group"
+                  className="p-8 rounded-[2rem] glass-panel border border-white/5 bg-black/40 hover:border-rose-500/30 transition-all duration-500 group"
                 >
-                  <div className="w-12 h-12 rounded-2xl bg-indigo-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                    <card.icon className="w-6 h-6 text-indigo-400" />
+                  <div className="w-12 h-12 rounded-2xl bg-rose-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <card.icon className="w-6 h-6 text-rose-400" />
                   </div>
                   <h4 className="text-lg font-bold text-white mb-3">{card.title}</h4>
                   <p className="text-sm text-white/50 leading-relaxed">{card.desc}</p>
@@ -295,19 +295,19 @@ export default function VisitorManagementCaseStudy() {
                 className="order-2 lg:order-1 relative"
               >
                 <div className="aspect-video rounded-[2.5rem] glass-panel border border-white/10 p-4 bg-black/60 relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/5 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-rose-500/5 to-transparent" />
                   {/* Dashboard Visual Mockup */}
                   <div className="h-full w-full flex flex-col gap-4">
                     <div className="h-12 w-full flex items-center justify-between px-4 border-b border-white/5">
                       <div className="w-24 h-3 bg-white/5 rounded-full" />
                       <div className="flex gap-2">
-                        <div className="w-8 h-8 rounded-lg bg-indigo-500/20" />
+                        <div className="w-8 h-8 rounded-lg bg-rose-500/20" />
                         <div className="w-8 h-8 rounded-lg bg-white/5" />
                       </div>
                     </div>
                     <div className="flex-1 grid grid-cols-12 gap-4">
                       <div className="col-span-8 space-y-4">
-                        <div className="h-24 w-full bg-indigo-500/5 rounded-2xl border border-white/5" />
+                        <div className="h-24 w-full bg-rose-500/5 rounded-2xl border border-white/5" />
                         <div className="h-40 w-full bg-white/5 rounded-2xl border border-white/5" />
                       </div>
                       <div className="col-span-4 space-y-4">
@@ -339,7 +339,7 @@ export default function VisitorManagementCaseStudy() {
                 className="order-1 lg:order-2"
               >
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 backdrop-blur-md mb-6">
-                  <Layout className="w-3 h-3 text-indigo-400" />
+                  <Layout className="w-3 h-3 text-rose-400" />
                   <span className="text-[10px] uppercase tracking-widest font-semibold text-white/70">Operational Visibility</span>
                 </div>
                 <h3 className="text-3xl md:text-5xl font-bold text-white mb-8 leading-tight">
@@ -374,7 +374,7 @@ export default function VisitorManagementCaseStudy() {
             />
 
             <div className="mt-20 h-[400px] md:h-[600px] relative rounded-[3rem] glass-panel border border-white/5 overflow-hidden p-12 flex items-center justify-center">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(79,70,229,0.05),transparent_70%)]" />
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(244,63,94,0.05),transparent_70%)]" />
               
               {/* Topology Map Concept */}
               <div className="relative w-full max-w-4xl flex items-center justify-between">
@@ -386,7 +386,7 @@ export default function VisitorManagementCaseStudy() {
                       whileInView={{ opacity: 1, x: 0 }}
                       className="p-6 rounded-2xl glass-panel border border-white/10 flex items-center gap-4 bg-black/40 relative z-10"
                     >
-                      <Building2 className="w-6 h-6 text-indigo-400" />
+                      <Building2 className="w-6 h-6 text-rose-400" />
                       <div className="text-xs font-bold text-white uppercase tracking-widest">Branch {i === 1 ? 'NYC' : 'LDN'}</div>
                     </motion.div>
                   ))}
@@ -396,10 +396,10 @@ export default function VisitorManagementCaseStudy() {
                 <motion.div 
                   initial={{ scale: 0.8, opacity: 0 }}
                   whileInView={{ scale: 1, opacity: 1 }}
-                  className="w-40 h-40 rounded-full border border-indigo-500/30 bg-black/60 flex items-center justify-center relative z-20"
+                  className="w-40 h-40 rounded-full border border-rose-500/30 bg-black/60 flex items-center justify-center relative z-20"
                 >
-                  <div className="absolute inset-0 bg-indigo-500/10 blur-2xl rounded-full" />
-                  <Server className="w-12 h-12 text-indigo-400" />
+                  <div className="absolute inset-0 bg-rose-500/10 blur-2xl rounded-full" />
+                  <Server className="w-12 h-12 text-rose-400" />
                 </motion.div>
 
                 <div className="flex flex-col gap-12 text-right">
@@ -411,7 +411,7 @@ export default function VisitorManagementCaseStudy() {
                       className="p-6 rounded-2xl glass-panel border border-white/10 flex items-center gap-4 bg-black/40 relative z-10"
                     >
                       <div className="text-xs font-bold text-white uppercase tracking-widest">Facility {i === 1 ? 'North' : 'South'}</div>
-                      <Building2 className="w-6 h-6 text-indigo-400" />
+                      <Building2 className="w-6 h-6 text-rose-400" />
                     </motion.div>
                   ))}
                 </div>
@@ -451,15 +451,15 @@ export default function VisitorManagementCaseStudy() {
                     { label: "Adaptive Component Library", icon: Layout }
                   ].map((item, i) => (
                     <div key={i} className="flex items-center gap-4 p-4 rounded-xl glass-panel border border-white/5">
-                      <item.icon className="w-5 h-5 text-indigo-400" />
+                      <item.icon className="w-5 h-5 text-rose-400" />
                       <span className="text-sm font-semibold text-white uppercase tracking-widest">{item.label}</span>
                     </div>
                   ))}
                 </div>
               </motion.div>
               <div className="flex items-center justify-center">
-                <div className="w-full max-w-md aspect-square rounded-[3rem] glass-panel border border-white/10 p-12 bg-indigo-500/5 relative overflow-hidden">
-                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(79,70,229,0.1),transparent_50%)]" />
+                <div className="w-full max-w-md aspect-square rounded-[3rem] glass-panel border border-white/10 p-12 bg-rose-500/5 relative overflow-hidden">
+                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(244,63,94,0.1),transparent_50%)]" />
                   <div className="relative z-10 grid grid-cols-2 gap-4">
                     {[...Array(4)].map((_, i) => (
                       <div key={i} className="aspect-square rounded-2xl glass-panel border border-white/5 bg-black/40 flex items-center justify-center">
@@ -491,13 +491,13 @@ export default function VisitorManagementCaseStudy() {
                   transition={{ delay: i * 0.1 }}
                   className="group relative p-10 rounded-[2.5rem] glass-panel border border-white/5 bg-black/40 hover:bg-white/[0.02] transition-all duration-500"
                 >
-                  <div className="w-12 h-12 rounded-2xl bg-indigo-500/10 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
-                    <challenge.icon className="w-6 h-6 text-indigo-400" />
+                  <div className="w-12 h-12 rounded-2xl bg-rose-500/10 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform">
+                    <challenge.icon className="w-6 h-6 text-rose-400" />
                   </div>
                   <h4 className="text-xl font-bold text-white mb-4 tracking-tight">{challenge.title}</h4>
                   <div className="space-y-6">
                     <div>
-                      <div className="text-[10px] text-indigo-400 uppercase tracking-widest font-bold mb-2">The Problem</div>
+                      <div className="text-[10px] text-rose-400 uppercase tracking-widest font-bold mb-2">The Problem</div>
                       <p className="text-xs text-white/50 leading-relaxed">{challenge.problem}</p>
                     </div>
                     <div>
@@ -529,10 +529,10 @@ export default function VisitorManagementCaseStudy() {
                   transition={{ delay: i * 0.1 }}
                   className="p-8 rounded-[2rem] glass-panel border border-white/5 bg-black/40 relative overflow-hidden group"
                 >
-                  <div className="absolute -top-10 -right-10 w-32 h-32 bg-indigo-500/5 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity" />
-                  <principle.icon className="w-8 h-8 text-indigo-400 mb-6" />
+                  <div className="absolute -top-10 -right-10 w-32 h-32 bg-rose-500/5 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <principle.icon className="w-8 h-8 text-rose-400 mb-6" />
                   <h4 className="text-lg font-bold text-white mb-2">{principle.title}</h4>
-                  <div className="text-xs text-indigo-400/60 font-bold mb-4 uppercase tracking-widest">{principle.philosophy}</div>
+                  <div className="text-xs text-rose-400/60 font-bold mb-4 uppercase tracking-widest">{principle.philosophy}</div>
                   <p className="text-sm text-white/50 leading-relaxed mb-6">{principle.description}</p>
                   <div className="text-[10px] text-white/30 italic uppercase tracking-wider">&quot;{principle.mindset}&quot;</div>
                 </motion.div>
@@ -554,7 +554,7 @@ export default function VisitorManagementCaseStudy() {
                     { label: "Storage", value: "Distributed", icon: Database }
                   ].map((item, i) => (
                     <div key={i} className="p-6 rounded-2xl glass-panel border border-white/5 bg-black/40">
-                      <item.icon className="w-5 h-5 text-indigo-400 mb-4" />
+                      <item.icon className="w-5 h-5 text-rose-400 mb-4" />
                       <div className="text-[10px] text-white/40 uppercase tracking-widest mb-1">{item.label}</div>
                       <div className="text-lg font-bold text-white">{item.value}</div>
                     </div>

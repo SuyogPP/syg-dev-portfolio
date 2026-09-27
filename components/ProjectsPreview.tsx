@@ -10,13 +10,13 @@ export default function ProjectsPreview() {
       title: "Fintech Dashboard",
       impact: "Reduced data latency by 40%",
       tech: ["Next.js", "TypeScript", "Tailwind", "WebSockets"],
-      color: "from-indigo-500/20 to-purple-500/20"
+      color: "from-red-500/20 to-rose-600/20"
     },
     {
       title: "Logistics API Gateway",
       impact: "Handles 5M+ daily requests",
       tech: ["Node.js", "Express", "Redis", "Docker"],
-      color: "from-cyan-500/20 to-blue-500/20"
+      color: "from-rose-500/20 to-amber-500/20"
     }
   ];
 
@@ -77,7 +77,7 @@ export default function ProjectsPreview() {
                     ))}
                   </div>
                   
-                  <h4 className="text-xl md:text-2xl lg:text-3xl font-bold text-white mb-3 md:mb-4 group-hover:text-cyan-400 transition-colors duration-300">
+                  <h4 className="text-xl md:text-2xl lg:text-3xl font-bold text-white mb-3 md:mb-4 group-hover:text-rose-400 transition-colors duration-300">
                     {project.title}
                   </h4>
                   

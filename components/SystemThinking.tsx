@@ -7,17 +7,17 @@ export default function SystemThinking() {
   const philosophies = [
     {
       title: "Scalability",
-      icon: <Layers size={20} className="text-indigo-400" />,
+      icon: <Layers size={20} className="text-rose-500" />,
       desc: "Architecting systems that gracefully handle growth from day one, using stateless services and horizontal scaling principles."
     },
     {
       title: "Performance",
-      icon: <Zap size={20} className="text-cyan-400" />,
+      icon: <Zap size={20} className="text-red-400" />,
       desc: "Relentlessly optimizing the critical path. Milliseconds matter when serving thousands of concurrent enterprise users."
     },
     {
       title: "Maintainability",
-      icon: <PenTool size={20} className="text-purple-400" />,
+      icon: <PenTool size={20} className="text-amber-500" />,
       desc: "Writing code for the next engineer. Emphasizing clean boundaries, robust types, and comprehensive documentation."
     }
   ];
@@ -30,7 +30,7 @@ export default function SystemThinking() {
           {/* Header Side */}
           <div className="w-full lg:w-1/3 text-center lg:text-left">
             <div className="lg:sticky lg:top-32">
-              <h2 className="text-xs md:text-sm font-semibold tracking-widest text-indigo-400 uppercase mb-3">Philosophy</h2>
+              <h2 className="text-xs md:text-sm font-semibold tracking-widest text-rose-500 uppercase mb-3">Philosophy</h2>
               <h3 className="fluid-h2 font-bold text-white tracking-tight leading-tight mb-6">
                 How I Build <br className="hidden lg:block" />Systems
               </h3>

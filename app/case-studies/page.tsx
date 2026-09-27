@@ -13,7 +13,7 @@ import SystemThinkingListing from "@/components/case-studies/listing/SystemThink
 export default function CaseStudiesListing() {
   return (
     <PageWrapper>
-      <div className="bg-background selection:bg-indigo-500/30">
+      <div className="bg-background selection:bg-red-500/30">
         {/* 1. Cinematic Hero Section */}
         <CaseStudyListingHero />
 

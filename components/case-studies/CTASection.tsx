@@ -16,7 +16,7 @@ export default function CTASection({
   return (
     <section className="relative py-32 md:py-48 overflow-hidden bg-background">
       <div className="absolute inset-0 z-0 pointer-events-none">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-indigo-500/10 blur-[120px] rounded-full" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-rose-500/10 blur-[120px] rounded-full" />
         <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_60%_60%_at_50%_50%,#000_70%,transparent_100%)]" />
       </div>
 
@@ -35,21 +35,21 @@ export default function CTASection({
             {subtitle}
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
             <Link
               href="mailto:suyogsanjeevanpp@gmail.com"
-              className="group relative px-10 py-5 bg-white text-black rounded-full font-bold flex items-center gap-3 hover:scale-105 transition-transform"
+              className="btn-primary w-full sm:w-auto"
             >
               <Mail size={18} />
-              Say Hello
+              <span>Say Hello</span>
             </Link>
             
             <Link
               href="/#contact"
-              className="group flex items-center gap-2 text-white font-semibold hover:text-indigo-400 transition-colors"
+              className="btn-secondary w-full sm:w-auto group"
             >
-              Discuss Architecture
-              <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+              <span>Discuss Architecture</span>
+              <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform text-white/70" />
             </Link>
           </div>
         </motion.div>

@@ -4,9 +4,11 @@ import "./globals.css";
 import { Figtree } from "next/font/google";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { cn } from "@/lib/utils";
+import { AmbientLighting } from "@/components/effects/AmbientLighting";
 import { LenisProvider } from "@/components/LenisProvider";
+import { EffectsProvider } from "@/components/EffectsProvider";
 
-const figtree = Figtree({subsets:['latin'],variable:'--font-sans'});
+const figtree = Figtree({ subsets: ['latin'], variable: '--font-sans' });
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -40,9 +42,12 @@ export default function RootLayout({
           forcedTheme="dark"
           disableTransitionOnChange
         >
-          <LenisProvider>
-            {children}
-          </LenisProvider>
+          <EffectsProvider>
+            <AmbientLighting />
+            <LenisProvider>
+              {children}
+            </LenisProvider>
+          </EffectsProvider>
         </ThemeProvider>
       </body>
     </html>

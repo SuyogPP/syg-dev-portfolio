@@ -41,7 +41,7 @@ export default function ProductThinking() {
   return (
     <section className="py-24 md:py-48 px-4 bg-white/[0.01] border-y border-white/5 relative overflow-hidden">
       {/* Background Decorative Element */}
-      <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-indigo-500/5 to-transparent pointer-events-none" />
+      <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-rose-500/5 to-transparent pointer-events-none" />
       
       <div className="container max-w-7xl mx-auto relative z-10">
         <div className="max-w-3xl mb-24">
@@ -64,8 +64,8 @@ export default function ProductThinking() {
               transition={{ delay: i * 0.1, duration: 0.8 }}
               className="p-10 rounded-[2.5rem] glass-panel border border-white/5 bg-black/40 group hover:border-white/20 transition-all duration-500"
             >
-              <div className="w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center mb-8 group-hover:scale-110 group-hover:bg-indigo-500/20 transition-all duration-500">
-                <item.icon size={28} className="text-white/40 group-hover:text-indigo-400 transition-colors" />
+              <div className="w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center mb-8 group-hover:scale-110 group-hover:bg-rose-500/20 transition-all duration-500">
+                <item.icon size={28} className="text-white/40 group-hover:text-rose-400 transition-colors" />
               </div>
               <h3 className="text-2xl font-bold text-white mb-4 tracking-tight">{item.title}</h3>
               <p className="text-sm text-white/40 leading-relaxed font-medium">

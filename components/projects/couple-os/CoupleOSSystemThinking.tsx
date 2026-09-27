@@ -42,10 +42,10 @@ export default function CoupleOSSystemThinking() {
               transition={{ duration: 0.8, delay: i * 0.1 }}
               className="p-12 rounded-[3rem] glass-panel border border-white/5 bg-white/[0.01] group relative overflow-hidden"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="absolute inset-0 bg-gradient-to-br from-rose-500/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               <div className="relative z-10">
-                <div className="w-16 h-16 rounded-3xl bg-indigo-500/10 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500">
-                  <card.icon className="w-8 h-8 text-indigo-400" />
+                <div className="w-16 h-16 rounded-3xl bg-rose-500/10 flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500">
+                  <card.icon className="w-8 h-8 text-rose-400" />
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-4 tracking-tight">{card.title}</h3>
                 <p className="text-sm text-white/50 leading-relaxed italic">&quot;{card.desc}&quot;</p>

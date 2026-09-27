@@ -24,7 +24,7 @@ export default function TechStackSection({ techStack }: { techStack: TechItem[] 
           }}
           className="glass-panel px-6 py-3 rounded-full flex items-center gap-3 cursor-default group border-white/5"
         >
-          <div className="w-2 h-2 rounded-full bg-indigo-500 group-hover:animate-pulse" />
+          <div className="w-2 h-2 rounded-full bg-rose-500 group-hover:animate-pulse" />
           <div className="flex flex-col">
             <span className="text-sm font-bold text-white tracking-tight">
               {tech.name}

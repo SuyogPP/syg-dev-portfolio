@@ -33,7 +33,7 @@ export default function CaseStudyContent({ slug }: CaseStudyContentProps) {
 
   return (
     <PageWrapper>
-      <div className="bg-background text-foreground selection:bg-indigo-500/30">
+      <div className="bg-background text-foreground selection:bg-red-500/30">
         {/* Cinematic Hero */}
         <section className="relative min-h-[90vh] flex flex-col items-center justify-center pt-32 pb-20 px-4 overflow-hidden">
           <AnimatedGrid />
@@ -44,7 +44,7 @@ export default function CaseStudyContent({ slug }: CaseStudyContentProps) {
               transition={{ duration: 0.8 }}
               className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 backdrop-blur-md mb-8"
             >
-              <div className="w-2 h-2 rounded-full bg-indigo-500 animate-pulse" />
+              <div className="w-2 h-2 rounded-full bg-rose-500 animate-pulse" />
               <span className="text-[10px] uppercase tracking-[0.2em] font-semibold text-white/60">
                 Case Study: {study.category}
               </span>
@@ -84,17 +84,17 @@ export default function CaseStudyContent({ slug }: CaseStudyContentProps) {
               </div>
               <div className="lg:col-span-7">
                 <div className="relative">
-                  <div className="absolute -left-12 top-0 bottom-0 w-[1px] bg-gradient-to-b from-indigo-500/50 to-transparent hidden lg:block" />
+                  <div className="absolute -left-12 top-0 bottom-0 w-[1px] bg-gradient-to-b from-red-500/50 to-transparent hidden lg:block" />
                   <p className="fluid-p text-white/80 mb-12">
                     {study.description}
                   </p>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                     <div>
-                      <h4 className="text-xs uppercase tracking-widest text-indigo-400 font-bold mb-4">Core Objectives</h4>
+                      <h4 className="text-xs uppercase tracking-widest text-rose-400 font-bold mb-4">Core Objectives</h4>
                       <ul className="space-y-3">
                         {study.overview.goals.map((g, i) => (
                           <li key={i} className="text-sm text-white/60 flex gap-3">
-                            <span className="text-indigo-500">→</span> {g}
+                            <span className="text-rose-500">→</span> {g}
                           </li>
                         ))}
                       </ul>

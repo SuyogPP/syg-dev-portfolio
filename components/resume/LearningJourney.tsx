@@ -32,12 +32,12 @@ export default function LearningJourney() {
               >
                 <div className="flex items-center gap-6">
                   <div className="w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center shrink-0">
-                    <Sparkles size={24} className="text-indigo-400 opacity-40 group-hover:opacity-100 transition-opacity" />
+                    <Sparkles size={24} className="text-rose-400 opacity-40 group-hover:opacity-100 transition-opacity" />
                   </div>
                   <div>
                     <div className="flex items-center gap-3 mb-1">
                       <h4 className="text-xl font-bold text-white tracking-tight">{item.title}</h4>
-                      <span className="px-2 py-0.5 rounded-md bg-indigo-500/10 border border-indigo-500/20 text-[8px] font-bold text-indigo-400 uppercase tracking-widest">
+                      <span className="px-2 py-0.5 rounded-md bg-rose-500/10 border border-rose-500/20 text-[8px] font-bold text-rose-400 uppercase tracking-widest">
                         {item.status}
                       </span>
                     </div>

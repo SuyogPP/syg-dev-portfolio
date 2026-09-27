@@ -28,8 +28,8 @@ export default function FrontendCraftsmanship() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {pillars.map((pillar, i) => (
                 <div key={i} className="space-y-4">
-                  <div className="w-10 h-10 rounded-xl bg-indigo-500/10 flex items-center justify-center">
-                    <pillar.icon size={20} className="text-indigo-400" />
+                  <div className="w-10 h-10 rounded-xl bg-rose-500/10 flex items-center justify-center">
+                    <pillar.icon size={20} className="text-rose-400" />
                   </div>
                   <h5 className="text-sm font-bold text-white uppercase tracking-wider">{pillar.title}</h5>
                   <p className="text-xs text-white/40 leading-relaxed">{pillar.desc}</p>
@@ -39,8 +39,8 @@ export default function FrontendCraftsmanship() {
           </div>
 
           <div className="relative">
-            <div className="aspect-square rounded-[3rem] glass-panel border border-white/10 p-12 bg-indigo-500/5 relative overflow-hidden flex items-center justify-center">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(79,70,229,0.1),transparent_50%)]" />
+            <div className="aspect-square rounded-[3rem] glass-panel border border-white/10 p-12 bg-rose-500/5 relative overflow-hidden flex items-center justify-center">
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(244,63,94,0.1),transparent_50%)]" />
               <div className="relative z-10 grid grid-cols-2 gap-4">
                 {[Cpu, Lock, Layout, Palette].map((Icon, i) => (
                   <motion.div
@@ -49,13 +49,13 @@ export default function FrontendCraftsmanship() {
                     transition={{ duration: 4, repeat: Infinity, delay: i * 0.5 }}
                     className="aspect-square w-24 rounded-2xl glass-panel border border-white/5 bg-black/40 flex items-center justify-center"
                   >
-                    <Icon size={32} className="text-indigo-400/40" />
+                    <Icon size={32} className="text-rose-400/40" />
                   </motion.div>
                 ))}
               </div>
             </div>
             {/* Background Glow */}
-            <div className="absolute -inset-20 bg-indigo-500/10 blur-[120px] rounded-full -z-10" />
+            <div className="absolute -inset-20 bg-rose-500/10 blur-[120px] rounded-full -z-10" />
           </div>
         </div>
       </div>

@@ -19,7 +19,7 @@ import ResumePreview from "@/components/resume/ResumePreview";
 export default function ResumePage() {
   return (
     <PageWrapper>
-      <div className="bg-background selection:bg-indigo-500/30">
+      <div className="bg-background selection:bg-red-500/30">
         {/* 1. Cinematic Hero Section */}
         <ResumeHero />
 
@@ -57,35 +57,35 @@ export default function ResumePage() {
                 Interested in building <span className="text-gradient">scalable systems</span> together?
               </h2>
               
-              <div className="flex flex-wrap justify-center gap-8">
+              <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
                 <Link
                   href={`mailto:${RESUME_DATA.contact.email}`}
-                  className="group flex items-center gap-4 px-10 py-5 bg-white text-black rounded-full font-bold hover:scale-105 transition-all duration-500 shadow-[0_0_50px_rgba(255,255,255,0.1)]"
+                  className="btn-primary"
                 >
-                  <Mail size={20} />
-                  Contact Me
+                  <Mail size={18} />
+                  <span>Contact Me</span>
                 </Link>
                 <Link
                   href={RESUME_DATA.contact.resumePdf}
                   download="Suyog_P_Resume.pdf"
-                  className="group flex items-center gap-4 px-10 py-5 glass-panel border border-white/10 text-white rounded-full font-bold hover:bg-white/5 transition-all duration-500"
+                  className="btn-secondary"
                 >
-                  <Download size={20} />
-                  Download Resume
+                  <Download size={18} />
+                  <span>Download Resume</span>
                 </Link>
                 <Link
                   href="/case-studies"
-                  className="group flex items-center gap-4 px-10 py-5 glass-panel border border-white/5 text-white/50 rounded-full font-bold hover:text-white transition-all duration-500"
+                  className="btn-secondary group"
                 >
-                  View Case Studies
-                  <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+                  <span>View Case Studies</span>
+                  <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform text-white/70" />
                 </Link>
               </div>
             </motion.div>
           </div>
           
           {/* Background Ambience */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-indigo-500/10 blur-[150px] rounded-full pointer-events-none" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-rose-500/10 blur-[150px] rounded-full pointer-events-none" />
         </section>
       </div>
     </PageWrapper>

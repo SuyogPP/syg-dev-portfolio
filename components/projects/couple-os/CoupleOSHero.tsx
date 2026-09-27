@@ -33,8 +33,8 @@ export default function CoupleOSHero() {
               top: `${Math.random() * 100}%`,
             }}
           >
-            <div className="p-4 rounded-full glass-panel border border-white/10 bg-indigo-500/5 blur-[2px]">
-              {i % 3 === 0 ? <Heart className="w-4 h-4 text-pink-400/30" /> : <Sparkles className="w-4 h-4 text-indigo-400/30" />}
+            <div className="p-4 rounded-full glass-panel border border-white/10 bg-rose-500/5 blur-[2px]">
+              {i % 3 === 0 ? <Heart className="w-4 h-4 text-pink-400/30" /> : <Sparkles className="w-4 h-4 text-rose-400/30" />}
             </div>
           </motion.div>
         ))}
@@ -59,7 +59,7 @@ export default function CoupleOSHero() {
           transition={{ duration: 0.8, delay: 0.1 }}
           className="text-6xl md:text-8xl lg:text-9xl font-bold mb-8 tracking-tighter text-white"
         >
-          Couple<span className="text-gradient from-indigo-400 via-pink-400 to-rose-400 bg-gradient-to-r bg-clip-text text-transparent">OS</span>
+          Couple<span className="text-gradient from-rose-400 via-red-500 to-amber-400 bg-gradient-to-r bg-clip-text text-transparent">OS</span>
         </motion.h1>
 
         <motion.p
@@ -84,7 +84,7 @@ export default function CoupleOSHero() {
             { Icon: Stars, label: "Atmospheric" }
           ].map((item, i) => (
             <div key={i} className="flex flex-col items-center gap-2 opacity-30 hover:opacity-100 transition-opacity duration-500">
-              <item.Icon className="w-6 h-6 text-indigo-400" />
+              <item.Icon className="w-6 h-6 text-rose-400" />
               <span className="text-[10px] uppercase tracking-widest font-bold text-white/40">{item.label}</span>
             </div>
           ))}
@@ -92,7 +92,7 @@ export default function CoupleOSHero() {
       </div>
 
       {/* Atmospheric Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[500px] bg-gradient-to-r from-indigo-500/10 via-pink-500/10 to-rose-500/10 blur-[180px] rounded-full pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[500px] bg-gradient-to-r from-red-500/10 via-pink-500/10 to-rose-500/10 blur-[180px] rounded-full pointer-events-none" />
     </section>
   );
 }

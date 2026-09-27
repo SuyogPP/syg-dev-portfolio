@@ -26,9 +26,9 @@ export default function LabsExplorations() {
             <motion.div
               key={i}
               whileHover={{ y: -10, scale: 1.05 }}
-              className="aspect-square rounded-3xl glass-panel border border-white/5 bg-white/[0.01] flex flex-col items-center justify-center gap-4 group transition-all duration-500 hover:border-indigo-500/30"
+              className="aspect-square rounded-3xl glass-panel border border-white/5 bg-white/[0.01] flex flex-col items-center justify-center gap-4 group transition-all duration-500 hover:border-rose-500/30"
             >
-              <div className="p-4 rounded-2xl bg-indigo-500/5 text-indigo-500/40 group-hover:text-indigo-400 group-hover:bg-indigo-500/10 transition-all">
+              <div className="p-4 rounded-2xl bg-rose-500/5 text-rose-500/40 group-hover:text-rose-400 group-hover:bg-rose-500/10 transition-all">
                 <lab.icon size={24} />
               </div>
               <span className="text-[10px] font-bold text-white/20 uppercase tracking-widest group-hover:text-white/60 transition-colors">

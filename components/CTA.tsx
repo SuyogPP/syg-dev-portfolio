@@ -2,13 +2,13 @@
 
 import { motion } from "motion/react";
 import Link from "next/link";
-import { Mail } from "lucide-react";
+import { Mail, ArrowRight } from "lucide-react";
 
 export default function CTA() {
   return (
     <section id="contact" className="relative py-24 md:py-40 overflow-hidden bg-[#050505]">
       {/* Immersive Glow Background */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[800px] h-[300px] md:h-[400px] bg-gradient-to-r from-indigo-500/20 via-purple-500/20 to-cyan-400/20 rounded-[100%] blur-[80px] md:blur-[100px] pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-[800px] h-[300px] md:h-[400px] bg-gradient-to-r from-red-600/20 via-rose-500/20 to-orange-500/20 rounded-[100%] blur-[80px] md:blur-[100px] pointer-events-none" />
       
       {/* Subtle Grid */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_60%_60%_at_50%_50%,#000_70%,transparent_100%)] pointer-events-none" />
@@ -38,17 +38,23 @@ export default function CTA() {
             Looking for a Senior Engineer to scale your architecture or lead your next major initiative? 
           </p>
 
-          <Link
-            href="mailto:suyogsanjeevanpp@gmail.com"
-            className="group relative inline-flex items-center justify-center px-8 py-4 font-semibold text-white transition-all duration-200 bg-white/5 border border-white/10 rounded-full hover:bg-white/10 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white/20"
-          >
-            <span className="relative flex items-center gap-3">
-              <Mail size={20} className="text-cyan-400" />
-              Say Hello
-            </span>
-            {/* Subtle glow on hover */}
-            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-cyan-400 opacity-0 group-hover:opacity-20 transition-opacity duration-500 blur-md -z-10" />
-          </Link>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <Link
+              href="mailto:suyogsanjeevanpp@gmail.com"
+              className="btn-primary w-full sm:w-auto"
+            >
+              <Mail size={18} />
+              <span>Say Hello</span>
+            </Link>
+
+            <Link
+              href="/case-studies"
+              className="btn-secondary w-full sm:w-auto group"
+            >
+              <span>Explore Architecture</span>
+              <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform text-white/70" />
+            </Link>
+          </div>
         </motion.div>
       </div>
     </section>

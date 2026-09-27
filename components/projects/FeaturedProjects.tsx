@@ -44,7 +44,7 @@ export default function FeaturedProjects() {
               transition={{ delay: 0.3 }}
               className="text-6xl md:text-8xl font-bold text-white mb-10 tracking-tighter leading-[0.9]"
             >
-              Couple<span className="bg-gradient-to-r from-pink-400 via-rose-400 to-indigo-400 bg-clip-text text-transparent">OS</span>
+              Couple<span className="bg-gradient-to-r from-rose-400 via-red-500 to-amber-400 bg-clip-text text-transparent">OS</span>
             </motion.h2>
 
             <motion.p 
@@ -78,17 +78,17 @@ export default function FeaturedProjects() {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-wrap gap-8">
+            <div className="flex flex-wrap gap-4 sm:gap-6">
               <Link
                 href="/projects/couple-os"
-                className="group/btn flex items-center gap-4 px-12 py-6 bg-white text-black rounded-full font-bold hover:scale-105 transition-all duration-500 shadow-[0_0_50px_rgba(255,255,255,0.1)]"
+                className="btn-primary group"
               >
-                Explore Project
-                <ArrowUpRight size={22} className="group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
+                <span>Explore Project</span>
+                <ArrowUpRight size={18} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
               </Link>
               <Link
                 href="/projects/couple-os#architecture"
-                className="group/btn flex items-center gap-4 px-12 py-6 glass-panel border border-white/10 text-white rounded-full font-bold hover:bg-white/5 transition-all duration-500"
+                className="btn-secondary"
               >
                 View Architecture
               </Link>
@@ -98,7 +98,7 @@ export default function FeaturedProjects() {
           {/* Immersive Visual Showcase */}
           <div className="lg:col-span-6 order-1 lg:order-2">
             <div className="relative aspect-square lg:aspect-[4/5] rounded-[4rem] overflow-hidden glass-panel border border-white/10 bg-white/[0.01] flex items-center justify-center p-16 group">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(244,114,182,0.1),transparent_70%)] opacity-50 group-hover:opacity-100 transition-opacity duration-1000" />
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(244,63,94,0.1),transparent_70%)] opacity-50 group-hover:opacity-100 transition-opacity duration-1000" />
               
               {/* Floating UI Fragments & Memory Particles */}
               <div className="absolute inset-0 overflow-hidden">
@@ -133,11 +133,11 @@ export default function FeaturedProjects() {
                   whileHover={{ scale: 1.05, rotate: 5 }}
                   className="p-12 md:p-16 rounded-[3.5rem] glass-panel border border-white/10 bg-black/60 shadow-2xl relative group/core"
                 >
-                  <div className="absolute inset-0 bg-gradient-to-br from-pink-500/20 to-indigo-500/20 blur-2xl opacity-50 group-hover/core:opacity-100 transition-opacity duration-700" />
+                  <div className="absolute inset-0 bg-gradient-to-br from-rose-500/20 to-red-500/20 blur-2xl opacity-50 group-hover/core:opacity-100 transition-opacity duration-700" />
                   <project.icon className="w-24 h-24 md:w-32 md:h-32 text-pink-400 relative z-10" />
                   
-                  <div className="absolute -top-6 -right-6 w-16 h-16 rounded-3xl bg-indigo-500/20 flex items-center justify-center border border-indigo-500/30 backdrop-blur-xl">
-                    <Code className="w-8 h-8 text-indigo-400" />
+                  <div className="absolute -top-6 -right-6 w-16 h-16 rounded-3xl bg-rose-500/20 flex items-center justify-center border border-rose-500/30 backdrop-blur-xl">
+                    <Code className="w-8 h-8 text-rose-400" />
                   </div>
                 </motion.div>
                 

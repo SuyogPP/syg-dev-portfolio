@@ -48,14 +48,14 @@ export default function SystemThinkingListing() {
               transition={{ duration: 0.8, delay: i * 0.1 }}
               className="p-10 rounded-[3rem] glass-panel border border-white/5 bg-black/40 hover:bg-white/[0.02] transition-all duration-500 group relative overflow-hidden"
             >
-              <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="absolute inset-0 bg-gradient-to-br from-rose-500/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               
               <div className="relative z-10">
-                <div className="p-4 rounded-2xl bg-indigo-500/10 w-fit mb-8 group-hover:scale-110 transition-transform duration-500">
-                  <item.icon className="w-8 h-8 text-indigo-400" />
+                <div className="p-4 rounded-2xl bg-rose-500/10 w-fit mb-8 group-hover:scale-110 transition-transform duration-500">
+                  <item.icon className="w-8 h-8 text-rose-400" />
                 </div>
                 
-                <div className="text-[10px] text-indigo-400 font-bold uppercase tracking-[0.2em] mb-2">
+                <div className="text-[10px] text-rose-400 font-bold uppercase tracking-[0.2em] mb-2">
                   {item.label}
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-6 tracking-tight">

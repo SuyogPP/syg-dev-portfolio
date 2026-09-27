@@ -71,11 +71,11 @@ export const CASE_STUDIES: CaseStudy[] = [
     description: "Architected and engineered the frontend ecosystem for a large-scale workforce management platform, handling complex operational dashboards, real-time attendance workflows, and enterprise scheduling systems.",
     category: "Enterprise",
     metrics: [
-      { label: "Active Scale", value: "2000+", icon: Users, description: "Daily active enterprise personnel", color: "from-blue-500/20 to-indigo-500/20", border: "border-blue-500/30" },
-      { label: "Complexity", value: "High Data", icon: Database, description: "Massive DOM & state management", color: "from-purple-500/20 to-pink-500/20", border: "border-purple-500/30" },
+      { label: "Active Scale", value: "2000+", icon: Users, description: "Daily active enterprise personnel", color: "from-red-500/20 to-rose-600/20", border: "border-red-500/30" },
+      { label: "Complexity", value: "High Data", icon: Database, description: "Massive DOM & state management", color: "from-rose-500/20 to-red-600/20", border: "border-rose-500/30" },
       { label: "Reliability", value: "99.9%", icon: ShieldCheck, description: "Production-grade UI resilience", color: "from-emerald-500/20 to-teal-500/20", border: "border-emerald-500/30" },
       { label: "Integration", value: ".NET APIs", icon: Zap, description: "Complex RESTful data pipelines", color: "from-amber-500/20 to-orange-500/20", border: "border-amber-500/30" },
-      { label: "Ecosystem", value: "Web & Auth", icon: Monitor, description: "Azure MSAL & RBAC integration", color: "from-cyan-500/20 to-blue-500/20", border: "border-cyan-500/30" },
+      { label: "Ecosystem", value: "Web & Auth", icon: Monitor, description: "Azure MSAL & RBAC integration", color: "from-rose-500/20 to-orange-500/20", border: "border-rose-500/30" },
     ],
     challenges: [
       { title: "Data-Heavy Interface Rendering", icon: Database, problem: "Rendering thousands of operational records and employee schedules without degrading browser performance.", solution: "Implemented React Virtualized and windowing techniques, coupled with aggressive memoization for sub-second UI responsiveness.", technical: "React Window • Memoization" },
@@ -127,11 +127,11 @@ export const CASE_STUDIES: CaseStudy[] = [
     description: "Architected a scalable enterprise operational system for corporate offices and facilities, featuring walk-in/pre-registration workflows, host approval systems, and HIKVISION access control integration.",
     category: "Enterprise",
     metrics: [
-      { label: "Operations", value: "Real-Time", icon: Zap, description: "Live visitor tracking & visibility", color: "from-blue-500/20 to-indigo-500/20", border: "border-blue-500/30" },
-      { label: "Workflows", value: "Automated", icon: Workflow, description: "Pre-registration & host approvals", color: "from-purple-500/20 to-pink-500/20", border: "border-purple-500/30" },
+      { label: "Operations", value: "Real-Time", icon: Zap, description: "Live visitor tracking & visibility", color: "from-red-500/20 to-rose-600/20", border: "border-red-500/30" },
+      { label: "Workflows", value: "Automated", icon: Workflow, description: "Pre-registration & host approvals", color: "from-rose-500/20 to-red-600/20", border: "border-rose-500/30" },
       { label: "Security", value: "HIKVISION", icon: Shield, description: "Access control synchronization", color: "from-emerald-500/20 to-teal-500/20", border: "border-emerald-500/30" },
       { label: "Locations", value: "Multi-Facility", icon: Globe, description: "Distributed operational support", color: "from-amber-500/20 to-orange-500/20", border: "border-amber-500/30" },
-      { label: "Scale", value: "Enterprise", icon: Users, description: "Organizational visitor management", color: "from-cyan-500/20 to-blue-500/20", border: "border-cyan-500/30" },
+      { label: "Scale", value: "Enterprise", icon: Users, description: "Organizational visitor management", color: "from-rose-500/20 to-orange-500/20", border: "border-rose-500/30" },
     ],
     challenges: [
       { title: "Operational Workflow Complexity", icon: Workflow, problem: "Managing non-linear visitor lifecycles from registration to exit across multiple roles.", solution: "Implemented a state-driven workflow engine with real-time host notifications and approval gates.", technical: "Redux State Machine • Real-time Events" },

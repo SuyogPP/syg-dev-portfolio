@@ -7,7 +7,7 @@ import { Contribution } from "@/data/caseStudies";
 export default function TimelineSection({ contributions }: { contributions: Contribution[] }) {
   return (
     <div className="relative">
-      <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-[1px] bg-gradient-to-b from-indigo-500/50 via-white/10 to-transparent transform -translate-x-1/2 hidden md:block" />
+      <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-[1px] bg-gradient-to-b from-rose-500/50 via-white/10 to-transparent transform -translate-x-1/2 hidden md:block" />
 
       <div className="space-y-12 md:space-y-24">
         {contributions.map((item, i) => (
@@ -28,7 +28,7 @@ export default function TimelineSection({ contributions }: { contributions: Cont
                 <div className={`flex items-center gap-3 mb-4 ${
                   i % 2 === 0 ? "md:justify-end" : "md:justify-start"
                 }`}>
-                  <CheckCircle2 className="w-5 h-5 text-indigo-400 shrink-0" />
+                  <CheckCircle2 className="w-5 h-5 text-rose-400 shrink-0" />
                   <h3 className="text-xl font-bold text-white">
                     {item.title}
                   </h3>
@@ -48,7 +48,7 @@ export default function TimelineSection({ contributions }: { contributions: Cont
               </div>
             </div>
 
-            <div className="absolute left-0 md:left-1/2 top-1/2 w-4 h-4 rounded-full bg-indigo-500 border-4 border-background transform -translate-x-1/2 -translate-y-1/2 z-10 hidden md:block" />
+            <div className="absolute left-0 md:left-1/2 top-1/2 w-4 h-4 rounded-full bg-rose-500 border-4 border-background transform -translate-x-1/2 -translate-y-1/2 z-10 hidden md:block" />
           </motion.div>
         ))}
       </div>

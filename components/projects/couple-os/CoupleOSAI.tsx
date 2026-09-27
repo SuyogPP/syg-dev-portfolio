@@ -16,8 +16,8 @@ export default function CoupleOSAI() {
       <div className="container max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <div className="order-2 lg:order-1 relative">
-            <div className="aspect-square rounded-[3rem] glass-panel border border-white/10 p-12 bg-indigo-500/5 relative overflow-hidden flex flex-col justify-center">
-              <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 via-transparent to-rose-500/10" />
+            <div className="aspect-square rounded-[3rem] glass-panel border border-white/10 p-12 bg-rose-500/5 relative overflow-hidden flex flex-col justify-center">
+              <div className="absolute inset-0 bg-gradient-to-br from-red-500/10 via-transparent to-rose-500/10" />
               
               {/* Animated AI Nodes */}
               <div className="space-y-6 relative z-10">
@@ -29,7 +29,7 @@ export default function CoupleOSAI() {
                     transition={{ delay: i * 0.2 }}
                     className="p-6 rounded-2xl glass-panel border border-white/5 bg-black/40 flex items-center gap-4"
                   >
-                    <div className="w-2 h-2 rounded-full bg-indigo-500 animate-pulse" />
+                    <div className="w-2 h-2 rounded-full bg-rose-500 animate-pulse" />
                     <div className="h-2 w-32 md:w-64 bg-white/10 rounded-full" />
                   </motion.div>
                 ))}
@@ -38,7 +38,7 @@ export default function CoupleOSAI() {
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                className="absolute -right-20 -bottom-20 w-80 h-80 rounded-full border border-indigo-500/10"
+                className="absolute -right-20 -bottom-20 w-80 h-80 rounded-full border border-rose-500/10"
               />
             </div>
             {/* Background Glow */}
@@ -63,8 +63,8 @@ export default function CoupleOSAI() {
             <div className="grid grid-cols-1 gap-8">
               {features.map((feature, i) => (
                 <div key={i} className="flex gap-6 group">
-                  <div className="w-12 h-12 rounded-2xl bg-indigo-500/10 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-500">
-                    <feature.icon className="w-6 h-6 text-indigo-400" />
+                  <div className="w-12 h-12 rounded-2xl bg-rose-500/10 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-500">
+                    <feature.icon className="w-6 h-6 text-rose-400" />
                   </div>
                   <div>
                     <h5 className="text-lg font-bold text-white mb-2 tracking-tight">{feature.title}</h5>

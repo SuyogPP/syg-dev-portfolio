@@ -7,7 +7,7 @@ import { History, Heart, Camera } from "lucide-react";
 export default function CoupleOSTimeline() {
   const milestones = [
     { title: "First Interaction", date: "June 2018", icon: Heart, color: "text-pink-400" },
-    { title: "The Proposal", date: "Dec 2021", icon: Camera, color: "text-indigo-400" },
+    { title: "The Proposal", date: "Dec 2021", icon: Camera, color: "text-rose-400" },
     { title: "Digital Union", date: "Present", icon: History, color: "text-emerald-400" }
   ];
 
@@ -23,7 +23,7 @@ export default function CoupleOSTimeline() {
 
         <div className="mt-24 relative">
           {/* Central Timeline Cable */}
-          <div className="absolute left-1/2 top-0 bottom-0 w-[1px] bg-gradient-to-b from-transparent via-indigo-500/30 to-transparent hidden md:block" />
+          <div className="absolute left-1/2 top-0 bottom-0 w-[1px] bg-gradient-to-b from-transparent via-rose-500/30 to-transparent hidden md:block" />
 
           <div className="space-y-24 md:space-y-40">
             {milestones.map((item, i) => (
@@ -36,12 +36,12 @@ export default function CoupleOSTimeline() {
                 className={`relative flex flex-col md:flex-row items-center gap-12 ${i % 2 !== 0 ? 'md:flex-row-reverse' : ''}`}
               >
                 {/* Milestone Node */}
-                <div className="absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-background border-2 border-indigo-500 z-10 hidden md:block shadow-[0_0_20px_rgba(99,102,241,0.5)]" />
+                <div className="absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-background border-2 border-rose-500 z-10 hidden md:block shadow-[0_0_20px_rgba(244,63,94,0.5)]" />
 
                 {/* Content Card */}
                 <div className="flex-1 w-full">
                   <div className="p-8 md:p-12 rounded-[3rem] glass-panel border border-white/5 bg-white/[0.02] hover:bg-white/[0.05] transition-all duration-500 group relative overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                    <div className="absolute inset-0 bg-gradient-to-br from-rose-500/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                     
                     <div className="flex items-center gap-4 mb-6">
                       <div className={`p-4 rounded-2xl bg-white/5 border border-white/10 group-hover:scale-110 transition-transform ${item.color}`}>

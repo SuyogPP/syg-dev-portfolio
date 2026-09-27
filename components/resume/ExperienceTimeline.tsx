@@ -28,7 +28,7 @@ export default function ExperienceTimeline() {
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16">
                 {/* Meta Column */}
                 <div className="lg:col-span-3 space-y-4">
-                  <div className="flex items-center gap-3 text-indigo-400">
+                  <div className="flex items-center gap-3 text-rose-400">
                     <Calendar size={18} />
                     <span className="text-sm font-bold tracking-wider">{exp.period}</span>
                   </div>
@@ -47,7 +47,7 @@ export default function ExperienceTimeline() {
                       <div className="text-[10px] font-bold text-white/20 uppercase tracking-[0.3em] mb-4">Engineering Highlights</div>
                       {exp.highlights.map((highlight, j) => (
                         <div key={j} className="flex gap-4 group/item">
-                          <div className="mt-1.5 shrink-0 w-1.5 h-1.5 rounded-full bg-indigo-500/40 group-hover/item:bg-indigo-500 transition-colors" />
+                          <div className="mt-1.5 shrink-0 w-1.5 h-1.5 rounded-full bg-rose-500/40 group-hover/item:bg-rose-500 transition-colors" />
                           <p className="text-sm text-white/50 leading-relaxed group-hover/item:text-white/80 transition-colors">
                             {highlight}
                           </p>
@@ -68,7 +68,7 @@ export default function ExperienceTimeline() {
 
               {/* Connector line for large screens */}
               {i < RESUME_DATA.experience.length - 1 && (
-                <div className="absolute left-[22px] top-12 bottom-[-64px] w-[1px] bg-gradient-to-b from-indigo-500/20 to-transparent hidden lg:block" />
+                <div className="absolute left-[22px] top-12 bottom-[-64px] w-[1px] bg-gradient-to-b from-rose-500/20 to-transparent hidden lg:block" />
               )}
             </motion.div>
           ))}

@@ -17,8 +17,8 @@ export default function ChallengeCards({ challenges }: { challenges: Challenge[]
           className="glass-panel p-8 rounded-[2rem] border border-white/5 hover:border-white/20 transition-all flex flex-col gap-6 group"
         >
           <div className="flex items-center justify-between">
-            <div className="p-3 rounded-2xl bg-white/5 group-hover:bg-indigo-500/10 transition-colors">
-              <challenge.icon className="w-6 h-6 text-indigo-400" />
+            <div className="p-3 rounded-2xl bg-white/5 group-hover:bg-rose-500/10 transition-colors">
+              <challenge.icon className="w-6 h-6 text-rose-400" />
             </div>
             <span className="text-[10px] font-mono text-white/20">0{i + 1}</span>
           </div>
@@ -35,7 +35,7 @@ export default function ChallengeCards({ challenges }: { challenges: Challenge[]
                 </p>
               </div>
               <div>
-                <p className="text-[10px] uppercase tracking-widest text-indigo-400/60 mb-1 font-bold">The Solution</p>
+                <p className="text-[10px] uppercase tracking-widest text-rose-400/60 mb-1 font-bold">The Solution</p>
                 <p className="text-sm text-white/90 leading-relaxed">
                   {challenge.solution}
                 </p>

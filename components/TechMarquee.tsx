@@ -15,16 +15,19 @@ export default function TechMarquee() {
   const scrollItems = [...TECH_STACK, ...TECH_STACK, ...TECH_STACK, ...TECH_STACK];
 
   return (
-    <div className="relative py-8 md:py-12 flex overflow-hidden bg-white/[0.01] border-y border-white/[0.05]">
+    <div className="relative py-8 md:py-12 flex overflow-hidden bg-black/40 border-y border-rose-500/10">
+      {/* Subtle hairline accent on top border */}
+      <div className="absolute top-0 inset-x-0 h-[1px] bg-gradient-to-r from-transparent via-rose-500/20 to-transparent pointer-events-none" />
+
       {/* Gradient fade edges */}
-      <div className="absolute left-0 top-0 bottom-0 w-20 md:w-32 bg-gradient-to-r from-[#050505] to-transparent z-10 pointer-events-none" />
-      <div className="absolute right-0 top-0 bottom-0 w-20 md:w-32 bg-gradient-to-l from-[#050505] to-transparent z-10 pointer-events-none" />
+      <div className="absolute left-0 top-0 bottom-0 w-24 md:w-36 bg-gradient-to-r from-[#000000] to-transparent z-10 pointer-events-none" />
+      <div className="absolute right-0 top-0 bottom-0 w-24 md:w-36 bg-gradient-to-l from-[#000000] to-transparent z-10 pointer-events-none" />
 
       <motion.div
         className="flex whitespace-nowrap items-center"
         animate={{ x: ["0%", "-50%"] }}
         transition={{
-          duration: 30,
+          duration: 32,
           ease: "linear",
           repeat: Infinity,
         }}
@@ -33,11 +36,13 @@ export default function TechMarquee() {
         style={{ animationPlayState: isHovered ? "paused" : "running" }}
       >
         {scrollItems.map((tech, index) => (
-          <div key={index} className="flex items-center">
-            <span className="text-2xl md:text-5xl font-bold text-white/10 tracking-widest px-4 md:px-8 transition-colors duration-300 hover:text-white/40 cursor-default">
+          <div key={index} className="flex items-center group cursor-default">
+            <span className="text-2xl md:text-5xl font-bold tracking-widest px-4 md:px-8 text-white/15 transition-colors duration-300 group-hover:text-rose-300/70">
               {tech}
             </span>
-            <span className="text-white/20 text-sm md:text-xl">✦</span>
+            <span className="text-rose-500/30 text-xs md:text-sm transition-colors duration-300 group-hover:text-rose-400/60">
+              ✦
+            </span>
           </div>
         ))}
       </motion.div>

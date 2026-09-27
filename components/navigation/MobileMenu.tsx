@@ -22,8 +22,8 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         >
           {/* Animated background elements */}
           <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
-            <div className="absolute top-1/4 left-1/4 w-[300px] h-[300px] bg-indigo-500/10 blur-[100px] rounded-full animate-pulse" />
-            <div className="absolute bottom-1/4 right-1/4 w-[300px] h-[300px] bg-cyan-500/10 blur-[100px] rounded-full animate-pulse delay-1000" />
+            <div className="absolute top-1/4 left-1/4 w-[300px] h-[300px] bg-red-500/10 blur-[100px] rounded-full animate-pulse" />
+            <div className="absolute bottom-1/4 right-1/4 w-[300px] h-[300px] bg-rose-500/10 blur-[100px] rounded-full animate-pulse delay-1000" />
           </div>
 
           <div className="relative z-10 flex flex-col items-center gap-12 w-full px-6">

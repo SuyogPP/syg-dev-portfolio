@@ -10,14 +10,14 @@ export default function CoupleOSCraftsmanship() {
       <div className="container max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
           <div className="order-2 lg:order-1 relative">
-             <div className="aspect-video rounded-[3rem] glass-panel border border-white/10 bg-indigo-500/5 flex items-center justify-center relative overflow-hidden">
-                <div className="absolute inset-0 bg-gradient-to-br from-pink-500/10 via-transparent to-indigo-500/10" />
+             <div className="aspect-video rounded-[3rem] glass-panel border border-white/10 bg-rose-500/5 flex items-center justify-center relative overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-pink-500/10 via-transparent to-rose-500/10" />
                 <motion.div
                   animate={{ scale: [1, 1.05, 1] }}
                   transition={{ duration: 5, repeat: Infinity }}
                   className="p-12 rounded-[2rem] glass-panel border border-white/5 bg-black/40 text-center"
                 >
-                   <Sparkles className="w-12 h-12 text-indigo-400 mx-auto mb-4" />
+                   <Sparkles className="w-12 h-12 text-rose-400 mx-auto mb-4" />
                    <div className="text-[10px] font-bold text-white/40 uppercase tracking-[0.2em]">Craftsmanship Detail</div>
                 </motion.div>
              </div>
@@ -45,8 +45,8 @@ export default function CoupleOSCraftsmanship() {
                 { title: "Scalable Architecture", desc: "A modular, production-grade frontend structure that supports growth.", icon: Layout }
               ].map((item, i) => (
                 <div key={i} className="flex gap-6 group">
-                  <div className="w-10 h-10 rounded-xl bg-indigo-500/10 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-500">
-                    <item.icon className="w-5 h-5 text-indigo-400" />
+                  <div className="w-10 h-10 rounded-xl bg-rose-500/10 flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform duration-500">
+                    <item.icon className="w-5 h-5 text-rose-400" />
                   </div>
                   <div>
                     <h5 className="text-sm font-bold text-white uppercase tracking-wider mb-2">{item.title}</h5>

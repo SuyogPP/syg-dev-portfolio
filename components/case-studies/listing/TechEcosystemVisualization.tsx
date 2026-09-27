@@ -74,10 +74,10 @@ export default function TechEcosystemVisualization() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: i * 0.1 }}
-              className="p-8 rounded-[2rem] glass-panel border border-white/5 bg-white/[0.02] group hover:border-indigo-500/30 transition-all duration-500"
+              className="p-8 rounded-[2rem] glass-panel border border-white/5 bg-white/[0.02] group hover:border-rose-500/30 transition-all duration-500"
             >
-              <div className="w-12 h-12 rounded-2xl bg-indigo-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                <eco.icon className="w-6 h-6 text-indigo-400" />
+              <div className="w-12 h-12 rounded-2xl bg-rose-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                <eco.icon className="w-6 h-6 text-rose-400" />
               </div>
               <h4 className="text-lg font-bold text-white mb-4 uppercase tracking-tight">{eco.title}</h4>
               <div className="flex flex-wrap gap-2">

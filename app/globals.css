@@ -81,13 +81,21 @@
 
 @layer utilities {
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 via-purple-500 to-cyan-400;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-red-500 via-rose-500 to-amber-500;
   }
   .glass-panel {
     @apply bg-white/[0.03] backdrop-blur-md border border-white/[0.08] shadow-[0_4px_30px_rgba(0,0,0,0.1)];
   }
   .glass-panel-hover {
     @apply transition-all duration-300 hover:bg-white/[0.05] hover:border-white/[0.15] hover:shadow-[0_8px_40px_rgba(255,255,255,0.05)];
+  }
+
+  /* Standardized Global Button Tokens */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-black font-semibold rounded-full hover:scale-105 hover:shadow-[0_0_35px_rgba(255,255,255,0.2)] active:scale-[0.98] transition-all duration-300 cursor-pointer;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-3 px-8 py-4 bg-white/[0.03] backdrop-blur-md border border-white/15 text-white font-semibold rounded-full hover:bg-white/10 hover:border-white/30 hover:scale-105 active:scale-[0.98] transition-all duration-300 cursor-pointer;
   }
 
   /* Fluid Typography */
@@ -137,4 +145,13 @@ html.lenis, html.lenis body {
 }
 .lenis.lenis-scrolling iframe {
   pointer-events: none;
+}
+
+/* Native cursor is preserved — no custom cursor override */
+
+/* Ambient Lighting CSS custom properties (set by EffectsProvider rAF) */
+:root {
+  --mouse-x: 50vw;
+  --mouse-y: 50vh;
+  --mouse-speed: 0;
 }

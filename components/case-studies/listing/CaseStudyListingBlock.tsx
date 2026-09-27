@@ -27,7 +27,7 @@ export default function CaseStudyListingBlock({ study, reversed, visual }: CaseS
           {/* Content Column */}
           <div className={`lg:col-span-6 flex flex-col justify-center ${reversed ? 'lg:order-2' : 'lg:order-1'}`}>
             <div className="flex items-center gap-3 mb-8">
-              <div className="px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-[10px] font-bold uppercase tracking-widest">
+              <div className="px-3 py-1 rounded-full bg-rose-500/10 border border-rose-500/20 text-rose-400 text-[10px] font-bold uppercase tracking-widest">
                 Enterprise Platform
               </div>
               <div className="text-[10px] font-bold text-white/30 uppercase tracking-widest">
@@ -64,22 +64,22 @@ export default function CaseStudyListingBlock({ study, reversed, visual }: CaseS
 
             <Link
               href={`/case-studies/${study.slug}`}
-              className="group/btn flex items-center gap-4 px-10 py-5 bg-white text-black rounded-full font-bold w-fit hover:scale-105 transition-all duration-500 shadow-[0_0_40px_rgba(255,255,255,0.1)]"
+              className="btn-primary w-fit group"
             >
-              Explore Case Study
-              <ArrowRight size={20} className="group-hover/btn:translate-x-2 transition-transform duration-500" />
+              <span>Explore Case Study</span>
+              <ArrowRight size={18} className="group-hover:translate-x-1.5 transition-transform duration-300" />
             </Link>
           </div>
 
           {/* Visual Column */}
           <div className={`lg:col-span-6 relative ${reversed ? 'lg:order-1' : 'lg:order-2'}`}>
             <div className="relative aspect-square md:aspect-video lg:aspect-square rounded-[3rem] overflow-hidden glass-panel border border-white/5 bg-white/[0.01] flex items-center justify-center p-8 md:p-12">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(79,70,229,0.05),transparent_70%)]" />
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(244,63,94,0.05),transparent_70%)]" />
               {visual}
             </div>
             
             {/* Background Glow */}
-            <div className="absolute -inset-10 bg-indigo-500/5 blur-[120px] rounded-full -z-10" />
+            <div className="absolute -inset-10 bg-rose-500/5 blur-[120px] rounded-full -z-10" />
           </div>
         </div>
       </motion.div>
